@@ -93,8 +93,6 @@ class _OSMMapPageState extends State<OSMMapPage> {
           return;
         }
       }
-
-      // Try to get current position first to ensure location is working
       try {
         Position currentPosition = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.high,

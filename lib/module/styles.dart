@@ -145,7 +145,11 @@ class Styles {
   static BoxDecoration cartsummaryContanerStyle = BoxDecoration(
     color: AppColors.white,
     boxShadow: [
-      BoxShadow(color: Colors.black.withOpacity(0.10), blurRadius: 8),
+      BoxShadow(
+        color: Colors.black.withOpacity(0.10),
+        blurRadius: 8,
+        offset: const Offset(0, 3),
+      ),
     ],
     border: Border.all(
       color: AppColors.grey,
