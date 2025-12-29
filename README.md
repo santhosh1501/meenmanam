@@ -44,3 +44,8 @@ Here is a list of common Flutter commands:
 
 For more details, use `flutter --help` or `flutter <command> --help`.
 # meenmanam
+swagger code generation
+update api json 
+./scripts/update_api.sh
+
+flutter pub run build_runner build --delete-conflicting-outputs

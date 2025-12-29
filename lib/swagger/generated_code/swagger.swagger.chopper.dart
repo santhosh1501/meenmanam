@@ -1,7 +1,7 @@
 // dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'api_client.swagger.dart';
+part of 'swagger.swagger.dart';
 
 // **************************************************************************
 // ChopperGenerator
@@ -9,14 +9,14 @@ part of 'api_client.swagger.dart';
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
-final class _$ApiClient extends ApiClient {
-  _$ApiClient([ChopperClient? client]) {
+final class _$Swagger extends Swagger {
+  _$Swagger([ChopperClient? client]) {
     if (client == null) return;
     this.client = client;
   }
 
   @override
-  final Type definitionType = ApiClient;
+  final Type definitionType = Swagger;
 
   @override
   Future<Response<SignInResponse>> _v1AuthSignInPost({

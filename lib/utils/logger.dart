@@ -1,3 +1,4 @@
+
 class Logger {
   static LogMode _logMode = LogMode.debug;
 

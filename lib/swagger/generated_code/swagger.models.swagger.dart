@@ -4,7 +4,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:collection/collection.dart';
 import 'dart:convert';
 
-part 'api_client.models.swagger.g.dart';
+part 'swagger.models.swagger.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class SignInDto {

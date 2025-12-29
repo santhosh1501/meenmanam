@@ -5,7 +5,7 @@ import 'package:json_annotation/json_annotation.dart' as json;
 import 'package:collection/collection.dart';
 import 'dart:convert';
 
-import 'api_client.models.swagger.dart';
+import 'swagger.models.swagger.dart';
 import 'package:chopper/chopper.dart';
 
 import 'client_mapping.dart';
@@ -13,17 +13,17 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart' show MultipartFile;
 import 'package:chopper/chopper.dart' as chopper;
-export 'api_client.models.swagger.dart';
+export 'swagger.models.swagger.dart';
 
-part 'api_client.swagger.chopper.dart';
+part 'swagger.swagger.chopper.dart';
 
 // **************************************************************************
 // SwaggerChopperGenerator
 // **************************************************************************
 
 @ChopperApi()
-abstract class ApiClient extends ChopperService {
-  static ApiClient create({
+abstract class Swagger extends ChopperService {
+  static Swagger create({
     ChopperClient? client,
     http.Client? httpClient,
     Authenticator? authenticator,
@@ -33,11 +33,11 @@ abstract class ApiClient extends ChopperService {
     List<Interceptor>? interceptors,
   }) {
     if (client != null) {
-      return _$ApiClient(client);
+      return _$Swagger(client);
     }
 
     final newClient = ChopperClient(
-      services: [_$ApiClient()],
+      services: [_$Swagger()],
       converter: converter ?? $JsonSerializableConverter(),
       interceptors: interceptors ?? [],
       client: httpClient,
@@ -45,7 +45,7 @@ abstract class ApiClient extends ChopperService {
       errorConverter: errorConverter,
       baseUrl: baseUrl ?? Uri.parse('http://'),
     );
-    return _$ApiClient(newClient);
+    return _$Swagger(newClient);
   }
 
   ///
